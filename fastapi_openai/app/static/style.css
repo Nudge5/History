@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #5c5a5a;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#chat-container {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    height: 500px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background: solid #ffffff;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.query-input-container {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 2px solid #3195ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3195ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3195ff;
+}
+
+.message {
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    justify-content: space-between; /* 텍스트와 아이콘 사이 간격 */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 8px;
+}
+
+.avatar {
+    width: 40px; /* 아바타 크기 */
+    height: 40px;
+    border-radius: 50%; /* 원형으로 표시 */
+    object-fit: cover;
+    margin-left: 10px; /* 텍스트와 아이콘 간격 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.text {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.message.user {
+    background-color: #ececec;
+}ㅌ
+
+.message.bot {
+    background-color: #ececec
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    font-size: 0.8em;
+    color: #666;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.disclaimer {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
