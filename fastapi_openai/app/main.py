@@ -48,11 +48,11 @@ def initialize_chain():
         index_name='faiss_index',
         allow_dangerous_deserialization=True
     )
-    retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 3})
+    retriever = db.as_retriever(search_type="mmr", search_kwargs={"k": 3, fetch_k:7})
 
     # 3. OpenAI LLM 초기화
     llm = ChatOpenAI(
-        model="gpt-4o",
+        model="gpt-3.5-turbo",
         temperature=0,
         max_tokens=1024
     )
